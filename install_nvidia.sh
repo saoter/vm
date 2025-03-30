@@ -45,6 +45,3 @@ echo "🔁 Enabling code-server to start..."
 systemctl --user enable --now code-server
 
 echo "✅ Setup complete!"
-
-
-
