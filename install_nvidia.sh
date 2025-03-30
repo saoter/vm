@@ -3,13 +3,8 @@
 set -e  # Exit if any command fails
 
 echo "🔄 Updating package list and upgrading system..."
-cd
 sudo apt-get update && sudo apt-get upgrade -y
 
-echo "🐍 Creating virtual environment and activating it..."
-sudo apt install -y python3.12-venv python3.12-dev
-python3.12 -m venv myenv
-source myenv/bin/activate
 
 # Optional: install specific torch version with CUDA (uncomment if needed)
 # pip install torch==2.4.1+cu124 torchvision==0.19.1+cu124 --extra-index-url https://download.pytorch.org/whl/cu124
